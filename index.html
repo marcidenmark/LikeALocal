@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Like a Local</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton|Oswald:700|Ultra" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="banner">
+      <div class="padding">
+        <div class="text-center padded" id="">
+          <h1>LIKE A LOCAL</h1>
+          <h4>Find out how the locals live and pick the perfect place to live.</h4>
+        </div>
+      </div>
+      <div id="map" style="height: 500px;"></div>
+      <div id="circle"> </div>
+<!--       <svg class=circle height="100" witdh="100">
+        <circle cx="50" cy="50" r="40" fill="#C1F7DC;" />
+      </svg> -->
+      <form class="form-inline">
+        <input type="address" placeholder="type address" class="form-control" id="your-address">
+        <input type="submit" value="submit" class="btn btn-primary">
+      </form>
+    </div>
+
+<div class="row-wrapper">
+<div class="row">
+  <div class="col-lg-6">
+    <div class="input-group">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locals <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Favorite places</a></li>
+          <li><a href="#">Best kept secret</a></li>
+          <li><a href="#">Where do you eat?</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Plot your places</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+      <input type="text" class="form-control" aria-label="...">
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+  <div class="col-lg-6">
+    <div class="input-group">
+      <input type="text" class="form-control" aria-label="...">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Movers <span class="caret"></span></button>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li><a href="#">What's important to you?</a></li>
+          <li><a href="#">Do you have kids?</a></li>
+          <li><a href="#">What are your favorite things to do?</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Search on the map</a></li>
+        </ul>
+      </div><!-- /btn-group -->
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+</div>
+
+  </div>
+  <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
