@@ -11,7 +11,7 @@ function callGoogleAPI(address) {
 
   $.ajax({
     type: "GET",
-    url: "https://maps.googleapis.com/maps/api/geocode/json?address=" + address,
+    url: "https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyAtnpIZC_cBOtWd4lmXGviarYpn0oMDbsQ&address=" + address,
 
     success: function(data) {
       // jQuery.parseJSON(data)
